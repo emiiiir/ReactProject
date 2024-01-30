@@ -6,14 +6,9 @@ export default new class ApiService {
    
     getListApi(){
         return axios.get(`${this.BASE_URL}`);
-        console.log("heyyyy")
+        
 
     }
-
-    inserNewApi(user:usersModel){
-        return axios.post(`${this.BASE_URL}/entries`,user)
-    }
-
     deleteUser(userId:string){
         return axios.delete(`${this.BASE_URL}/${userId}`)
     }
